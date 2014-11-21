@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Document</title>
+	<title>LCH的網頁</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap-theme.min.css">
+	<link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico" />
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -15,6 +18,7 @@
     <![endif]-->
 </head>
 <body class="bg-success">
+
     <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -29,6 +33,7 @@
       </button>
       
       <a class="navbar-brand" href="#" ><span class="glyphicon glyphicon-home"></span> 首頁</a>
+      <a class="navbar-brand" href="#" ><span class="glyphicon glyphicon-user"></span> about me</a>
 
     </div>
 
@@ -46,7 +51,7 @@
     	<marquee><center><h1><strong><em>Welcome to visit my personal website!</em></strong></h1></center>
     	</marquee>
 
-    	<div class="col-sm-4 col-md-4">
+    	<div class= "col-sm-4 col-md-4" "col-xs-6" "col-ls-4">
     	
     		<img src="http://i.imgur.com/m44UrhT.jpg" alt="" class="img-responsive">
     
@@ -54,23 +59,44 @@
        
       
   		</div>
-  		<div class="col-sm-8 col-md-8" >
+  		<div class= "col-sm-8 col-md-8" "col-xs-8" "col-ls-8">
   			<div class="panel panel-primary">
-  				<div class="panel-heading">
+  				<div class="panel-heading" >
   				<h3 class="panel-title"> 自我介紹</h3>
   				</div>
-  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 姓名：廖志豪</h3>
-  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 學校：中興大學資工學系三年級</h3>
-  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 出生年份：83/02/22</h3>
-  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 專長：期末成績低空飛過不被當</h3>
-  		    	<a target="_blank" href="https://www.facebook.com/profile.php?id=100000161260813" font="6"> 聽說你要找我 <span class="glyphicon glyphicon-heart"></a>
-  		    	<h3></h3>
-  		    	<h3></h3>
+  				
+  		    	<h1><span class="glyphicon glyphicon-hand-right"></span> 這是一個很普通的網站的普通首頁</h1>
+  		    	<h2><span class="glyphicon glyphicon-hand-right"></span> This is an index</h2>
+  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 好想換手機哦</h3>
+  		    	<h4><span class="glyphicon glyphicon-hand-right"></span> 不知道這邊還能打甚麼.....</h4>
+  		    	<h5><span class="glyphicon glyphicon-hand-right"></span> 快填滿空格了</h5>
+  		    	<a target="_blank" href="https://www.facebook.com/profile.php?id=100000161260813" font="6"> 聽說你要找我 <span class="glyphicon glyphicon-heart"></span></a>
+  		    
     		</div>
+    		
+			<div class="row">
+  				<div class="col-xs-6 col-sm-6 col-md-3 col-ls-3"><button type="button" class="btn btn-success" id="button1" onclick="showMsg()" >今天運氣如何?</button></div>
+  				<div class="col-xs-6 col-sm-6 col-md-9 col-ls-9"><h4 id="luckyStr"> What's happen?</h4></div>
+			</div>
+			
+		
+			
+			
     	</div>
 
+		
     </div>
+
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script >
+	var b1 = document.getElementById("button1");
+			function showMsg()
+			{
+				var show=[];
+    			show=["今天你會踩到狗屎","大吉","血光之災","拿不到首勝","撿到100元","要被二一了...珍重再見","很平凡的一天","兇","---算命中---","不想告訴你"];
+				document.getElementById("luckyStr").innerHTML=show[Math.floor(Math.random()*10)];
+			}
+</script>
 </body>
 </html>
