@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>LCH的網頁</title>
+	<title>關於LCH</title>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bootstrap/3.3.0/css/bootstrap-theme.min.css">
 	<link rel="shortcut icon" href="https://fbstatic-a.akamaihd.net/rsrc.php/yl/r/H3nktOa7ZMg.ico" />
@@ -42,7 +42,7 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="<bs-example-navbar-collapse-1></bs-example-navbar-collapse-1>">
       <ul class="nav navbar-nav navbar-right">
         <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100000161260813"><span class="glyphicon glyphicon-earphone"></span>	聯絡我</a></li>
       </ul>
@@ -52,72 +52,28 @@
 
     <div class="container">
 
-    	<marquee><center><h1><strong><em>Welcome to visit my personal website!</em></strong></h1></center>
-    	</marquee>
+    	 
 
-    	<div class= "col-sm-6 col-md-4 col-xs-12 col-ls-6">
-    		
-    				<img src="http://i.imgur.com/m44UrhT.jpg" alt="" class="img-responsive">
-    			
-       
-      
-  		</div>
-  		<div class="col-sm-6 col-md-8 col-xs-12 col-ls-6">
-  			<div class="panel panel-primary">
-  				<div class="panel-heading" >
-  				<h3 class="panel-title"> :D</h3>
-  				</div>
-  				
-  		    	<h1 ><span class="glyphicon glyphicon-hand-right"></span> 這是一個很普通的網站的普通首頁</h1>
-  		    	<h2><span class="glyphicon glyphicon-hand-right"></span> This is an index</h2>
-  		    	<h3><span class="glyphicon glyphicon-hand-right"></span> 好想換手機哦</h3>
-  		    	<h4><span class="glyphicon glyphicon-hand-right"></span> 不知道這邊還能打甚麼.....</h4>
-  		    	<h5><span class="glyphicon glyphicon-hand-right"></span> 快填滿空格了</h5>
-  		    	<a target="_blank" href="https://www.facebook.com/profile.php?id=100000161260813" font="6"> 聽說你要找我 <span class="glyphicon glyphicon-heart"></span></a>
-  		    
-    		</div>
-    		
-			<div class="row">
-  				<div class="col-xs-6 col-sm-6 col-md-3 col-ls-3" ><button type="button" class="btn btn-success" id="button1" onclick="showMsg()" >今天運氣如何?</button></div>
-  				<div class="col-xs-6 col-sm-6 col-md-9 col-ls-9"><h4 id="luckyStr"> What's happen?</h4></div>
-			</div>
-			
-		
-			
-			
-    	</div>
+		<div class="row">
+			<div class="col-sm-6 col-md-4 col-xs-6 col-lg-4"><img src="http://i.imgur.com/pFLAwxL.png" title="廖志豪" alt="" style="width:250px; height:250px"class="img-circle" ></div>	
+			<div class="col-sm-6 col-md-8 col-xs-6 col-lg-8"><h2><span class="glyphicon glyphicon-flag"></span> 我叫廖志豪</h2><h3>因對理工較擅長而進入資訊工程學系</h3><h3>目前就讀中興大學資工系三年級，是資工系男籃<font color="red">最認真</font>的球經，現在致力於專題研究中…</h3></div>	
+		</div>
 
+    	<img src="http://i.imgur.com/i0z3C9c.jpg" style="width:1200px; height:250px"  alt="" class="img-responsive">
+		<font align="center"><h1><strong><span class="glyphicon glyphicon-qrcode"></span> Birth of me</strong></h1></font>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6"><img src="http://i.imgur.com/TIwhWXg.jpg" title="birth" alt="" class="img-responsive"></div>
+			<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6"><h4>西元1994年2月22號，我出生在羅東的XX醫院，在還沒學會站立之前就已搬到台北。</h4></div>
+		</div>	
+		<font align="center"><h1><strong><span class="glyphicon glyphicon-plane"></span> About Future</strong></h1></font>
+		<div class="row">
+			<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6"><font align="center"><h4>考研究所準備</h4></font></div>
+			<div class="col-sm-6 col-md-6 col-xs-12 col-lg-6"><img src="http://i.imgur.com/BbBZIoM.jpg" title="future" alt="" class="img-responsive"></div>
+		</div>	
 		
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-<script >
-	var b1 = document.getElementById("button1"),times=0;
-			function showMsg()
-			{	
-				times++;
-				var show=[];
-    			show=["今天你會踩到狗屎","大吉","血光之災","拿不到首勝","撿到100元","要被二一了...珍重再見","很平凡的一天","凶","---算命中---","不想告訴你"];
-				if(times<Math.random()*15+5)
-				{
-					document.getElementById("luckyStr").innerHTML=show[Math.floor(Math.random()*10)];
-				}
-				else
-				{	
-					times=0;
-					document.getElementById("luckyStr").innerHTML="我累了讓我休息一下......";
-					$("#button1").hide();
-					window.setTimeout(delay,5000);
-				}
-			}
-			function delay()
-			{
-				$("#button1").show();
-				document.getElementById("luckyStr").innerHTML="OK!!來吧";
-			}
-</script>
-
 </body>
-
 </html>
